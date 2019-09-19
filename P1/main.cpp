@@ -6,10 +6,10 @@
 #include <fstream>
 #include "PriorityQueue.h"
 
-typedef PriorityQueue<int64_t, std::less<int64_t>> priority_queue;
+typedef PriorityQueue<int64_t, std::less<int64_t>> problem_priority_queue;
 
 // función que resuelve el problema
-int64_t resolver(priority_queue datos)
+int64_t resolver(problem_priority_queue& datos)
 {
 	if (datos.size() == 1)
 		return 0;
@@ -40,7 +40,7 @@ bool resuelveCaso()
 	if (length == 0)
 		return false;
 
-	priority_queue priorityQueue;
+	problem_priority_queue priorityQueue;
 	for (size_t i = 0; i < length; ++i)
 	{
 		int64_t number;

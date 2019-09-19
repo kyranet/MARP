@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "P1"
+		},
+		{
+			"path": "P2"
+		},
+		{
+			"path": "P3"
 		}
 	],
 	"settings": {
